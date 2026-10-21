@@ -1,6 +1,6 @@
 <script setup>
 defineProps({ brandName: { type: String, default: '배움길' }, tagline: { type: String, default: '배우고 싶은 마음이 길이 되도록' }, columns: { type: Array, default: () => [
-  { title: '강의 찾기', links: ['전체 강의', '개발', '디자인'] },
+  { title: '강의 찾기 NEW', links: ['전체 강의', '개발', '디자인'] },
   { title: '강사', links: ['강사 소개', '강의 제안', '커뮤니티'] },
   { title: '도움말', links: ['고객 지원', '자주 묻는 질문', '이용약관'] },
 ] } })

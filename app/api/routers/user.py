@@ -28,6 +28,7 @@ def login(req: LoginReq, res: Response, db: Session = Depends(get_db)):
         httponly=True,
         secure=False,
         samesite="lax",
+        domain="en-core.kro.kr"
     )
     return {"user_id": user.idx, "email": user.email, "name": user.name}
 
@@ -109,5 +110,6 @@ def kakao_login(req: KakaoLoginReq, res: Response, db: Session = Depends(get_db)
         httponly=True,
         secure=False,
         samesite="lax",
+        domain="en-core.kro.kr",
     )
     return {"user_id": user.idx, "email": user.email, "name": user.name}
